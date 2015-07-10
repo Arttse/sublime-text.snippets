@@ -48,3 +48,16 @@ To:
 ```javascript
 $(function(){});
 ```
+
+### jquery.ready.full
+From:
+
+```
+jqrf
+```
+
+To:
+
+```javascript
+$(document).ready(function(){});
+```
