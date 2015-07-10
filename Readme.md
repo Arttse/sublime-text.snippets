@@ -14,3 +14,24 @@ To:
 ```javascript
 (function($){})(jQuery);
 ```
+
+### jquery.isolated.ready
+From:
+
+```
+jqir
+```
+
+To:
+
+```javascript
+(function($){
+/*-----------------------------------------*/
+
+
+$(function(){});
+
+
+/*-----------------------------------------*/
+})(jQuery);
+```
