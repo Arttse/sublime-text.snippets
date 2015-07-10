@@ -35,3 +35,16 @@ $(function(){});
 /*-----------------------------------------*/
 })(jQuery);
 ```
+
+### jquery.ready
+From:
+
+```
+jqr
+```
+
+To:
+
+```javascript
+$(function(){});
+```
