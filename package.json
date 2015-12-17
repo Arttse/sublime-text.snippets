@@ -1,0 +1,23 @@
+{
+  "name": "sublime-text.snippets",
+  "version": "0.1.0",
+  "description": "Sublime Text useful collection of snippeets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arttse/sublime-text.snippets.git"
+  },
+  "author": "Nikita «Arttse» Bystrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arttse/sublime-text.snippets/issues"
+  },
+  "homepage": "https://github.com/Arttse/sublime-text.snippets#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-doctoc": "^0.1.3"
+  }
+}
