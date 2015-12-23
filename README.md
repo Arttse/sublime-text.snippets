@@ -13,6 +13,8 @@
     - [jquery.isolated.ready](#jqueryisolatedready)
     - [jquery.ready](#jqueryready)
     - [jquery.ready.full](#jqueryreadyfull)
+  - [Other](#other)
+    - [console.log](#consolelog)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -99,4 +101,22 @@ To:
 
 ```javascript
 $(document).ready(function(){});
+```
+
+### Other
+
+#### console.log
+
+[View Source](snippets/JavaScript/Other/console.log.sublime-snippet)
+
+From:
+
+```
+cl
+```
+
+To:
+
+```javascript
+console.log();
 ```
