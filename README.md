@@ -13,7 +13,7 @@
     - [jquery.isolated.ready](#jqueryisolatedready)
     - [jquery.ready](#jqueryready)
     - [jquery.ready.full](#jqueryreadyfull)
-  - [Other](#other)
+  - [Console](#console)
     - [console.log](#consolelog)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -103,11 +103,11 @@ To:
 $(document).ready(function(){});
 ```
 
-### Other
+### Console
 
 #### console.log
 
-[View Source](snippets/JavaScript/Other/console.log.sublime-snippet)
+[View Source](snippets/JavaScript/console/console.log.sublime-snippet)
 
 From:
 
