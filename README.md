@@ -14,6 +14,7 @@
     - [jquery.ready](#jqueryready)
     - [jquery.ready.full](#jqueryreadyfull)
   - [Console](#console)
+    - [console.error](#consoleerror)
     - [console.log](#consolelog)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -104,6 +105,22 @@ $(document).ready(function(){});
 ```
 
 ### Console
+
+#### console.error
+
+[View Source](snippets/JavaScript/console/console.error.sublime-snippet)
+
+From:
+
+```
+ce
+```
+
+To:
+
+```javascript
+console.error();
+```
 
 #### console.log
 
