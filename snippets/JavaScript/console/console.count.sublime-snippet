@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[console.count(${0:$TM_SELECTED_TEXT});]]></content>
+    <tabTrigger>cc</tabTrigger>
+    <scope>source.js</scope>
+    <description>console.count()</description>
+</snippet>

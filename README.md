@@ -15,6 +15,7 @@
     - [[jqrf] jquery.ready.full](#jqrf-jqueryreadyfull)
   - [Console](#console)
     - [[ca] console.assert](#ca-consoleassert)
+    - [[cc] console.count](#cc-consolecount)
     - [[ce] console.error](#ce-consoleerror)
     - [[cl] console.log](#cl-consolelog)
 
@@ -122,6 +123,22 @@ To:
 
 ```javascript
 console.assert();
+```
+
+#### [cc] console.count
+
+[View Source](snippets/JavaScript/console/console.count.sublime-snippet)
+
+From:
+
+```
+cc
+```
+
+To:
+
+```javascript
+console.count();
 ```
 
 #### [ce] console.error
