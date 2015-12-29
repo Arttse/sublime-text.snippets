@@ -36,17 +36,17 @@ Example for `Sublime Text 3`:
 
 ### jQuery
 
+> jQuery is a fast, small, and feature-rich JavaScript library.
+It makes things like HTML document traversal and manipulation, event handling, animation,
+and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+With a combination of versatility and extensibility, jQuery has changed the way that
+millions of people write JavaScript.
+
 #### [jqi] jquery.isolated
 
 [View Source](snippets/JavaScript/jQuery/jquery.isolated.sublime-snippet)
 
-From:
-
-```
-jqi
-```
-
-To:
+From `jqi` to:
 
 ```javascript
 (function($){})(jQuery);
@@ -56,13 +56,7 @@ To:
 
 [View Source](snippets/JavaScript/jQuery/jquery.isolated.ready.sublime-snippet)
 
-From:
-
-```
-jqir
-```
-
-To:
+From `jqir` to:
 
 ```javascript
 (function($){
@@ -80,13 +74,7 @@ $(function(){});
 
 [View Source](snippets/JavaScript/jQuery/jquery.ready.sublime-snippet)
 
-From:
-
-```
-jqr
-```
-
-To:
+From `jqr` to:
 
 ```javascript
 $(function(){});
@@ -96,13 +84,7 @@ $(function(){});
 
 [View Source](snippets/JavaScript/jQuery/jquery.ready.full.sublime-snippet)
 
-From:
-
-```
-jqrf
-```
-
-To:
+From `jqrf` to:
 
 ```javascript
 $(document).ready(function(){});
@@ -110,17 +92,15 @@ $(document).ready(function(){});
 
 ### Console
 
+> The console object provides access to the browser's debugging console.
+The specifics of how it works vary from browser to browser,
+but there is a de facto set of features that are typically provided.
+
 #### [ca] console.assert
 
 [View Source](snippets/JavaScript/console/console.assert.sublime-snippet)
 
-From:
-
-```
-ca
-```
-
-To:
+From `ca` to:
 
 ```javascript
 console.assert();
@@ -130,13 +110,7 @@ console.assert();
 
 [View Source](snippets/JavaScript/console/console.count.sublime-snippet)
 
-From:
-
-```
-cc
-```
-
-To:
+From `cc` to:
 
 ```javascript
 console.count();
@@ -146,13 +120,7 @@ console.count();
 
 [View Source](snippets/JavaScript/console/console.dir.sublime-snippet)
 
-From:
-
-```
-cd
-```
-
-To:
+From `cd` to:
 
 ```javascript
 console.dir();
@@ -162,13 +130,7 @@ console.dir();
 
 [View Source](snippets/JavaScript/console/console.error.sublime-snippet)
 
-From:
-
-```
-ce
-```
-
-To:
+From `ce` to:
 
 ```javascript
 console.error();
@@ -178,13 +140,7 @@ console.error();
 
 [View Source](snippets/JavaScript/console/console.log.sublime-snippet)
 
-From:
-
-```
-cl
-```
-
-To:
+From `cl` to:
 
 ```javascript
 console.log();
