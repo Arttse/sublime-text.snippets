@@ -16,6 +16,7 @@
   - [Console](#console)
     - [[ca] console.assert](#ca-consoleassert)
     - [[cc] console.count](#cc-consolecount)
+    - [[cd] console.dir](#cd-consoledir)
     - [[ce] console.error](#ce-consoleerror)
     - [[cl] console.log](#cl-consolelog)
 
@@ -139,6 +140,22 @@ To:
 
 ```javascript
 console.count();
+```
+
+#### [cd] console.dir
+
+[View Source](snippets/JavaScript/console/console.dir.sublime-snippet)
+
+From:
+
+```
+cd
+```
+
+To:
+
+```javascript
+console.dir();
 ```
 
 #### [ce] console.error
