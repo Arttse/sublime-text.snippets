@@ -17,6 +17,7 @@
     - [[ca] console.assert](#ca-consoleassert)
     - [[cc] console.count](#cc-consolecount)
     - [[cd] console.dir](#cd-consoledir)
+    - [[cdx] console.dirxml](#cdx-consoledirxml)
     - [[ce] console.error](#ce-consoleerror)
     - [[cl] console.log](#cl-consolelog)
 
@@ -124,6 +125,16 @@ From `cd` to:
 
 ```javascript
 console.dir();
+```
+
+#### [cdx] console.dirxml
+
+[View Source](snippets/JavaScript/console/console.dirxml.sublime-snippet)
+
+From `cdx` to:
+
+```javascript
+console.dirxml();
 ```
 
 #### [ce] console.error
