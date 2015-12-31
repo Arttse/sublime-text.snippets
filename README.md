@@ -19,6 +19,7 @@
     - [[cd] console.dir](#cd-consoledir)
     - [[cdx] console.dirxml](#cdx-consoledirxml)
     - [[ce] console.error](#ce-consoleerror)
+    - [[cg] console.group](#cg-consolegroup)
     - [[cl] console.log](#cl-consolelog)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -145,6 +146,16 @@ From `ce` to:
 
 ```javascript
 console.error();
+```
+
+#### [cg] console.group
+
+[View Source](snippets/JavaScript/console/console.group.sublime-snippet)
+
+From `cg` to:
+
+```javascript
+console.group();
 ```
 
 #### [cl] console.log
