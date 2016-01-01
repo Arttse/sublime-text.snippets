@@ -20,6 +20,7 @@
     - [[cdx] console.dirxml](#cdx-consoledirxml)
     - [[ce] console.error](#ce-consoleerror)
     - [[cg] console.group](#cg-consolegroup)
+    - [[cgc] console.groupCollapsed](#cgc-consolegroupcollapsed)
     - [[cl] console.log](#cl-consolelog)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -156,6 +157,16 @@ From `cg` to:
 
 ```javascript
 console.group();
+```
+
+#### [cgc] console.groupCollapsed
+
+[View Source](snippets/JavaScript/console/console.groupCollapsed.sublime-snippet)
+
+From `cgc` to:
+
+```javascript
+console.groupCollapsed();
 ```
 
 #### [cl] console.log
