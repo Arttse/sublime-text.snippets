@@ -21,6 +21,7 @@
     - [[ce] console.error](#ce-consoleerror)
     - [[cg] console.group](#cg-consolegroup)
     - [[cgc] console.groupCollapsed](#cgc-consolegroupcollapsed)
+    - [[cge] console.groupEnd](#cge-consolegroupend)
     - [[cl] console.log](#cl-consolelog)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -167,6 +168,16 @@ From `cgc` to:
 
 ```javascript
 console.groupCollapsed();
+```
+
+#### [cge] console.groupEnd
+
+[View Source](snippets/JavaScript/console/console.groupEnd.sublime-snippet)
+
+From `cge` to:
+
+```javascript
+console.groupEnd();
 ```
 
 #### [cl] console.log
