@@ -24,6 +24,7 @@
     - [[cge] console.groupEnd](#cge-consolegroupend)
     - [[ci] console.info](#ci-consoleinfo)
     - [[cl] console.log](#cl-consolelog)
+    - [[cp] console.profile](#cp-consoleprofile)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -199,4 +200,14 @@ From `cl` to:
 
 ```javascript
 console.log();
+```
+
+#### [cp] console.profile
+
+[View Source](snippets/JavaScript/console/console.profile.sublime-snippet)
+
+From `cp` to:
+
+```javascript
+console.profile();
 ```
