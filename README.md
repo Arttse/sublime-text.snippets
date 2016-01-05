@@ -25,6 +25,7 @@
     - [[ci] console.info](#ci-consoleinfo)
     - [[cl] console.log](#cl-consolelog)
     - [[cp] console.profile](#cp-consoleprofile)
+    - [[cpe] console.profileEnd](#cpe-consoleprofileend)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -210,4 +211,14 @@ From `cp` to:
 
 ```javascript
 console.profile();
+```
+
+#### [cpe] console.profileEnd
+
+[View Source](snippets/JavaScript/console/console.profileEnd.sublime-snippet)
+
+From `cpe` to:
+
+```javascript
+console.profileEnd();
 ```
