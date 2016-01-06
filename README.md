@@ -26,6 +26,7 @@
     - [[cl] console.log](#cl-consolelog)
     - [[cp] console.profile](#cp-consoleprofile)
     - [[cpe] console.profileEnd](#cpe-consoleprofileend)
+    - [[ct] console.table](#ct-consoletable)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -221,4 +222,14 @@ From `cpe` to:
 
 ```javascript
 console.profileEnd();
+```
+
+#### [ct] console.table
+
+[View Source](snippets/JavaScript/console/console.table.sublime-snippet)
+
+From `ct` to:
+
+```javascript
+console.table();
 ```
