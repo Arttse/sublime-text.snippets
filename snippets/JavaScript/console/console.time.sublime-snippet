@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[console.time(${0:$TM_SELECTED_TEXT});]]></content>
+    <tabTrigger>cti</tabTrigger>
+    <scope>source.js</scope>
+    <description>console.time()</description>
+</snippet>

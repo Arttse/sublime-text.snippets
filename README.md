@@ -27,6 +27,7 @@
     - [[cp] console.profile](#cp-consoleprofile)
     - [[cpe] console.profileEnd](#cpe-consoleprofileend)
     - [[ct] console.table](#ct-consoletable)
+    - [[cti] console.time](#cti-consoletime)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -232,4 +233,13 @@ From `ct` to:
 
 ```javascript
 console.table();
+```
+#### [cti] console.time
+
+[View Source](snippets/JavaScript/console/console.time.sublime-snippet)
+
+From `cti` to:
+
+```javascript
+console.time();
 ```
