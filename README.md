@@ -26,7 +26,7 @@
     - [[cl] console.log](#cl-consolelog)
     - [[cp] console.profile](#cp-consoleprofile)
     - [[cpe] console.profileEnd](#cpe-consoleprofileend)
-    - [[ct] console.table](#ct-consoletable)
+    - [[cta] console.table](#cta-consoletable)
     - [[cti] console.time](#cti-consoletime)
     - [[ctie] console.timeEnd](#ctie-consoletimeend)
 
@@ -226,11 +226,11 @@ From `cpe` to:
 console.profileEnd();
 ```
 
-#### [ct] console.table
+#### [cta] console.table
 
 [View Source](snippets/JavaScript/console/console.table.sublime-snippet)
 
-From `ct` to:
+From `cta` to:
 
 ```javascript
 console.table();
