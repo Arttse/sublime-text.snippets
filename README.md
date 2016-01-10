@@ -29,6 +29,7 @@
     - [[cta] console.table](#cta-consoletable)
     - [[cti] console.time](#cti-consoletime)
     - [[ctie] console.timeEnd](#ctie-consoletimeend)
+    - [[ctr] console.trace](#ctr-consoletrace)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -39,6 +40,7 @@ You can save them to your `Packages/User` folder.
 
 Example for `Sublime Text 3`:
 - In `Linux` default path is `/home/{username}/.config/sublime-text-3/Packages/User`.
+- In `Mac OS` default path is `/Users/{username}/Library/Application Support/Sublime Text 3/Packages/User`
 - In `Windows` default path is `C:\Users\{username}\AppData\Roaming\Sublime Text 3\Packages\User`
 
 
@@ -254,4 +256,14 @@ From `ctie` to:
 
 ```javascript
 console.timeEnd();
+```
+
+#### [ctr] console.trace
+
+[View Source](snippets/JavaScript/console/console.trace.sublime-snippet)
+
+From `ctr` to:
+
+```javascript
+console.trace();
 ```

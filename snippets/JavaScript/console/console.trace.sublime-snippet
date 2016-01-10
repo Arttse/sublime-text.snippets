@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[console.trace();]]></content>
+    <tabTrigger>ctr</tabTrigger>
+    <scope>source.js</scope>
+    <description>console.trace()</description>
+</snippet>
