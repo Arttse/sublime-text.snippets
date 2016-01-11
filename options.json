@@ -1,0 +1,25 @@
+{
+  "namePackage" : "Snippets by Arttse",
+  "snippets" : [
+    "./snippets/JavaScript/console/*.sublime-snippet",
+    "./snippets/JavaScript/jQuery/*.sublime-snippet"
+  ],
+  "garbage" : [
+    "./.snippets",
+    "./.temp"
+  ],
+  "installPaths" : {
+    "linux" : [
+      "{homeDir}/.config/sublime-text-2/Installed Packages",
+      "{homeDir}/.config/sublime-text-3/Installed Packages"
+    ],
+    "darwin" : [
+      "{homeDir}/Library/Application Support/Sublime Text 2/Installed Packages",
+      "{homeDir}/Library/Application Support/Sublime Text 3/Installed Packages"
+    ],
+    "win32" : [
+      "{homeDir}\\AppData\\Roaming\\Sublime Text 2\\Installed Packages",
+      "{homeDir}\\AppData\\Roaming\\Sublime Text 3\\Installed Packages"
+    ]
+  }
+}
