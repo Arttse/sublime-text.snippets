@@ -1,11 +1,11 @@
-var gulp         = require ( 'gulp' ),
-    toc          = require ( 'gulp-doctoc' ),
-    zip          = require ( 'gulp-zip' ),
-    del          = require ( 'del' ),
-    seq          = require ( 'run-sequence' ),
-    fs           = require ( 'fs' ),
-    os           = require ( 'os' ),
-    opts         = require ( './options.json' );
+var gulp = require ( 'gulp' ),
+    toc  = require ( 'gulp-doctoc' ),
+    zip  = require ( 'gulp-zip' ),
+    del  = require ( 'del' ),
+    seq  = require ( 'run-sequence' ),
+    fs   = require ( 'fs' ),
+    os   = require ( 'os' ),
+    opts = require ( './options.json' );
 
 gulp.task ( 'toc', function () {
     return gulp
@@ -24,7 +24,7 @@ gulp.task ( 'check.paths', function ( cb ) {
 
         opts.installPaths[os.platform ()].forEach ( function ( pa ) {
 
-            pa = pa.replace( /\{homeDir}/g, os.homedir() );
+            pa = pa.replace ( /\{homeDir}/g, os.homedir () );
 
             try {
                 if ( fs.statSync ( pa ).isDirectory () ) {
@@ -70,7 +70,7 @@ gulp.task ( 'package.copy', function ( cb ) {
 
         opts.installPaths[os.platform ()].forEach ( function ( pa ) {
 
-            pa = pa.replace( /\{homeDir}/g, os.homedir() );
+            pa = pa.replace ( /\{homeDir}/g, os.homedir () );
 
             try {
                 if ( fs.statSync ( pa ).isDirectory () ) {
