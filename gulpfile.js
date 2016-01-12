@@ -1,12 +1,35 @@
-var gulp       = require ( 'gulp' ),
-    toc        = require ( 'gulp-doctoc' ),
-    zip        = require ( 'gulp-zip' ),
-    del        = require ( 'del' ),
-    lintspaces = require ( 'gulp-lintspaces' ),
-    seq        = require ( 'run-sequence' ),
-    fs         = require ( 'fs' ),
-    os         = require ( 'os' ),
-    opts       = require ( './options.json' );
+var gulp            = require ( 'gulp' ),
+    toc             = require ( 'gulp-doctoc' ),
+    zip             = require ( 'gulp-zip' ),
+    validatePackage = require ( 'gulp-nice-package' ),
+    mapStream       = require ( 'map-stream' ),
+    lintSpaces      = require ( 'gulp-lintspaces' ),
+    del             = require ( 'del' ),
+    seq             = require ( 'run-sequence' ),
+    fs              = require ( 'fs' ),
+    os              = require ( 'os' ),
+    opts            = require ( './options.json' );
+
+process.on ( 'exit', function () {
+    process.nextTick ( function () {
+        process.exit ( 1 );
+    } );
+} );
+
+gulp.task ( 'validator.package', function () {
+    return gulp
+        .src ( './package.json' )
+        .pipe ( validatePackage () )
+        .pipe ( mapStream ( function ( file, cb ) {
+            isValid = file.nicePackage.valid;
+            cb ( null, file );
+        } ) )
+        .on ( 'end', function () {
+            if ( !isValid ) {
+                process.emit ( 'exit' );
+            }
+        } );
+} );
 
 gulp.task ( 'toc', function () {
     return gulp
@@ -120,6 +143,12 @@ gulp.task ( 'lint.spaces', function () {
             './*.md',
             './**/*.sublime-snippet'
         ] )
-        .pipe ( lintspaces ( { editorconfig : './.editorconfig' } ) )
-        .pipe ( lintspaces.reporter () );
+        .pipe ( lintSpaces ( { editorconfig : './.editorconfig' } ) )
+        .pipe ( lintSpaces.reporter () );
+} );
+
+gulp.task ( 'tests', function ( cb ) {
+
+    seq ( 'validator.package', 'lint.spaces', 'package.build', 'cleansing.garbage', cb );
+
 } );

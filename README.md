@@ -1,5 +1,8 @@
 # Sublime Text Snippets
 
+[![Build Status](https://travis-ci.org/Arttse/sublime-text.snippets.svg?branch=master)](https://travis-ci.org/Arttse/sublime-text.snippets)
+[![devDependency Status](https://david-dm.org/Arttse/sublime-text.snippets/dev-status.svg)](https://david-dm.org/Arttse/sublime-text.snippets#info=devDependencies)
+
 > Useful things for a faster, pleasant experience
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -7,6 +10,8 @@
 ## Table of Contents
 
 - [How to install](#how-to-install)
+  - [Manually](#manually)
+  - [Automatically](#automatically)
 - [JavaScript](#javascript)
   - [jQuery](#jquery)
     - [[jqi] jquery.isolated](#jqi-jqueryisolated)
@@ -35,14 +40,40 @@
 
 ## How to install
 
-Snippets can be stored under any package’s folder.
+### Manually
+
+Snippets (files with extension `sublime-snippet`) can be stored under any package’s folder.
 You can save them to your `Packages/User` folder.
 
-Example for `Sublime Text 3`:
+Example path for `Sublime Text 3`:
 - In `Linux` default path is `/home/{username}/.config/sublime-text-3/Packages/User`.
 - In `Mac OS` default path is `/Users/{username}/Library/Application Support/Sublime Text 3/Packages/User`
 - In `Windows` default path is `C:\Users\{username}\AppData\Roaming\Sublime Text 3\Packages\User`
 
+Where `{username}` its your name of account in OS.
+
+### Automatically
+
+1. You need to install [Node.js](https://nodejs.org)
+2. Open your terminal in OS.
+3. Clone this project
+
+With `git`:
+```bash
+git clone https://github.com/Arttse/sublime-text.snippets.git
+cd sublime-text.snippets
+```
+
+OR [Download ZIP](https://github.com/Arttse/sublime-text.snippets/archive/master.zip),
+unzip and navigate to folder `sublime-text.snippets-master` with your terminal
+
+4. Consistently execute commands
+
+```bash
+npm install -g gulp
+npm install
+gulp package.install
+```
 
 ## JavaScript
 
