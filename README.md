@@ -58,14 +58,14 @@ Where `{username}` its your name of account in OS.
 2. Open your terminal in OS.
 3. Clone this project
 
-With `git`:
-```bash
-git clone https://github.com/Arttse/sublime-text.snippets.git
-cd sublime-text.snippets
-```
-
-OR [Download ZIP](https://github.com/Arttse/sublime-text.snippets/archive/master.zip),
-unzip and navigate to folder `sublime-text.snippets-master` with your terminal
+  With `git`:
+  ```bash
+  git clone https://github.com/Arttse/sublime-text.snippets.git
+  cd sublime-text.snippets
+  ```
+  
+  OR [Download ZIP](https://github.com/Arttse/sublime-text.snippets/archive/master.zip),
+  unzip and navigate to folder `sublime-text.snippets-master` with your terminal
 
 4. Consistently execute commands
 
