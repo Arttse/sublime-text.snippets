@@ -1,11 +1,12 @@
-var gulp = require ( 'gulp' ),
-    toc  = require ( 'gulp-doctoc' ),
-    zip  = require ( 'gulp-zip' ),
-    del  = require ( 'del' ),
-    seq  = require ( 'run-sequence' ),
-    fs   = require ( 'fs' ),
-    os   = require ( 'os' ),
-    opts = require ( './options.json' );
+var gulp       = require ( 'gulp' ),
+    toc        = require ( 'gulp-doctoc' ),
+    zip        = require ( 'gulp-zip' ),
+    del        = require ( 'del' ),
+    lintspaces = require ( 'gulp-lintspaces' ),
+    seq        = require ( 'run-sequence' ),
+    fs         = require ( 'fs' ),
+    os         = require ( 'os' ),
+    opts       = require ( './options.json' );
 
 gulp.task ( 'toc', function () {
     return gulp
@@ -109,4 +110,16 @@ gulp.task ( 'cleansing.garbage', function ( cb ) {
 
 gulp.task ( 'package.install', function ( cb ) {
     seq ( 'check.paths', 'package.build', 'package.copy', 'cleansing.garbage', cb );
+} );
+
+gulp.task ( 'lint.spaces', function () {
+    return gulp
+        .src ( [
+            './*.js',
+            './*.json',
+            './*.md',
+            './**/*.sublime-snippet'
+        ] )
+        .pipe ( lintspaces ( { editorconfig : './.editorconfig' } ) )
+        .pipe ( lintspaces.reporter () );
 } );
