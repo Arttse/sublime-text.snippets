@@ -8,7 +8,8 @@ var gulp            = require ( 'gulp' ),
     seq             = require ( 'run-sequence' ),
     fs              = require ( 'fs' ),
     os              = require ( 'os' ),
-    opts            = require ( './options.json' );
+    opts            = require ( './options.json' ),
+    isValid;
 
 process.on ( 'exit', function () {
     process.nextTick ( function () {
@@ -62,7 +63,7 @@ gulp.task ( 'check.paths', function ( cb ) {
         if ( hasDir ) {
             cb ();
         } else {
-            console.error ( 'Application «Sublime Text» path not found' );
+            console.error ( 'Package cant be installed. Path for install not found' );
             process.exit ( 1 );
         }
 
@@ -148,7 +149,5 @@ gulp.task ( 'lint.spaces', function () {
 } );
 
 gulp.task ( 'tests', function ( cb ) {
-
     seq ( 'validator.package', 'lint.spaces', 'package.build', 'cleansing.garbage', cb );
-
 } );

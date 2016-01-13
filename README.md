@@ -36,6 +36,7 @@
     - [[cti] console.time](#cti-consoletime)
     - [[ctie] console.timeEnd](#ctie-consoletimeend)
     - [[ctr] console.trace](#ctr-consoletrace)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -57,6 +58,7 @@ Where `{username}` its your name of account in OS.
 
 > This method allows you to automatically collect
 from source and install directly into `Sublime Text`.
+Works in `Linux`, `Mac OS` and `Windows`
 
 1. You need to install [Node.js](https://nodejs.org)
 2. Open your terminal in OS.
@@ -334,3 +336,6 @@ From `ctr` to:
 ```javascript
 console.trace();
 ```
+
+## License
+[MIT](http://www.opensource.org/licenses/mit-license.php) &copy; 2015-2016 Nikita «Arttse» Bystrov
