@@ -12,6 +12,7 @@
 - [How to install](#how-to-install)
   - [Manually](#manually)
   - [Automatically](#automatically)
+  - [Half-automatically](#half-automatically)
 - [JavaScript](#javascript)
   - [jQuery](#jquery)
     - [[jqi] jquery.isolated](#jqi-jqueryisolated)
@@ -42,7 +43,7 @@
 
 ### Manually
 
-Snippets (files with extension `sublime-snippet`) can be stored under any package’s folder.
+> Snippets (files with extension `sublime-snippet`) can be stored under any package’s folder.
 You can save them to your `Packages/User` folder.
 
 Example path for `Sublime Text 3`:
@@ -53,6 +54,9 @@ Example path for `Sublime Text 3`:
 Where `{username}` its your name of account in OS.
 
 ### Automatically
+
+> This method allows you to automatically collect
+from source and install directly into `Sublime Text`.
 
 1. You need to install [Node.js](https://nodejs.org)
 2. Open your terminal in OS.
@@ -67,13 +71,45 @@ Where `{username}` its your name of account in OS.
   OR [Download ZIP](https://github.com/Arttse/sublime-text.snippets/archive/master.zip),
   unzip and navigate to folder `sublime-text.snippets-master` with your terminal
 
-4. Consistently execute commands
+4. Install `Gulp` globally
 
-```bash
-npm install -g gulp
-npm install
-gulp package.install
-```
+  For `Linux` and `Mac OS`:
+  ```bash
+  sudo npm install -g gulp
+  ```
+  
+  For `Windows`:
+  ```bash
+  npm install -g gulp
+  ```
+
+5. Install dependencies
+  ```bash
+  npm install
+  ```
+  
+6. Install sublime snippets package
+
+  ```bash
+  gulp package.install
+  ```
+
+### Half-automatically
+> This method is automatic build of the `sublime-package`,
+then you manually decide what to do with this package,
+put it in a specific folder or to send to a friend, for example.
+
+1. You have to perform 5 steps from the instruction [Automatically](#automatically).
+2. Create `sublime-package`, run:
+  ```bash
+  gulp package.create
+  ```
+  The package will appear in the folder `.temp`
+  
+3. After any action with the package, you can clean the garbage, run:
+  ```bash
+  gulp cleansing.garbage
+  ```
 
 ## JavaScript
 
