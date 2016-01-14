@@ -36,6 +36,7 @@
     - [[cti] console.time](#cti-consoletime)
     - [[ctie] console.timeEnd](#ctie-consoletimeend)
     - [[ctr] console.trace](#ctr-consoletrace)
+    - [[cw] console.warn](#cw-consolewarn)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -335,6 +336,16 @@ From `ctr` to:
 
 ```javascript
 console.trace();
+```
+
+#### [cw] console.warn
+
+[View Source](snippets/JavaScript/console/console.warn.sublime-snippet)
+
+From `cw` to:
+
+```javascript
+console.warn();
 ```
 
 ## License
